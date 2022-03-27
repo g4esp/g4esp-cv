@@ -1,4 +1,6 @@
 import React, {useState} from "react"
+import moon from "../moon.png"
+import sun from "../sun.png"
 
 export default function Heading ({heading: {firstName, lastName, position, tagline, thumb}, children}) {
   const [dark, setDark] = useState(false)
@@ -19,9 +21,7 @@ export default function Heading ({heading: {firstName, lastName, position, tagli
     <div className="switcher">
       <button onClick={changeTheme}>
         <img 
-        src={`${dark  ? 
-        "./../src/sun.png"
-        : "./../src/moon.png"}`} 
+        src={`${dark  ? sun : moon}`} 
         alt="Click to change theme ;)" />
       </button>
     </div>

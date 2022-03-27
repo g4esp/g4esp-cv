@@ -110,6 +110,7 @@ ul.tools li:last-child h4:after {
   right: 10px;
 }
 .switcher button {
+  cursor: pointer;
   border: 1px solid;
   margin-bottom: 1.5em;
   border-radius: 5px;
