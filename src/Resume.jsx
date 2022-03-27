@@ -4,8 +4,14 @@ export default function Resume() {
       <Heading
         firstName="Gianni"
         lastName="Esposito"
+<<<<<<< HEAD
         position="Web developer">
         <h4><em>Self-taught enthusiastic and passionate web and frontend developer</em>.</h4>
+=======
+        position="Web developer"
+      >
+        <h4><em>Self-taught fullstack creative, enthusiastic and passionate web and frontend developer</em>.</h4>
+>>>>>>> adb013e5099259bd43bc68265df52bfdfbe2bc81
         <Contacts 
           email="gianniesp@outlook.com"
           tel="+39 328 9452130"
@@ -40,16 +46,28 @@ const Contacts = ({email, tel, linkedin, github}) => (
 )
 
 const Skills = () => {
+<<<<<<< HEAD
   const langs = ["HTML", "CSS", "🤟🏻 JavaScript"]
   const tools = ["Wordpress,", "PHP,", "WP Rest API,", "React,", "Nextjs,", "Node,", "MongoDB,", "MySQL,", "GraphQL,", "Tailwind,", "Bootstrap,", "GitHub,", "Netlify,", "Figma,", "Notion,", "..."]
+=======
+  const langs = ["HTML,", "CSS,", "🤟🏻 JavaScript"]
+  const tools = ["Wordpress,", "PHP,", "WP Rest API,", "React,", "Nextjs,", "Node,", "MongoDB,", "MySQL,", "GraphQL,", "SCSS,", "Tailwind,", "Bootstrap,", "GitHub,", "Netlify,", "Figma,", "Notion,", "..."]
+>>>>>>> adb013e5099259bd43bc68265df52bfdfbe2bc81
   return (
     <>
     <h2>SKILLS <span>// Tech and tools I use in every day work</span></h2>
     <ul className="langs">
+<<<<<<< HEAD
       <li><h4>[{langs.join(', ')}]</h4></li>
     </ul>
     <ul className="tools">
       [{tools.map((tool,i) => (<li key={i}>{tool}</li>))}]
+=======
+    [{langs.map((lang,i) => (<li key={i}><h4>{lang}</h4></li>))}]
+    </ul>
+    <ul className="tools">
+     [{tools.map((tool,i) => (<li key={i}>{tool}</li>))}]
+>>>>>>> adb013e5099259bd43bc68265df52bfdfbe2bc81
     </ul>
     </>
   )
