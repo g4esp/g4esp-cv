@@ -11,15 +11,9 @@ export const G4ESP = () => {
   const [me, setMe] = useState()
   
   useEffect(() => {
-    fetch('https://github.com/g4esp/g4esp-cv/blob/0a65b2b8dcc33cbc4c5b14e8bae069108184740f/src/g4esp.json', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        "Access-Control-Allow-Origin": "*"
-      }
+    fetch('../src/g4esp.json', {
     })
-        .then((data) => data.text())
+        .then((data) => data.json())
         .then((profile) => setMe(profile))
         .catch((err) => console.log(err.message))
   }, [])
