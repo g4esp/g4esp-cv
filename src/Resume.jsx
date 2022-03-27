@@ -1,8 +1,11 @@
 export default function Resume() {
   return (
     <>
-      <Heading firstName="Gianni" lastName="Esp" position="Web developer">
-        <h4><em>Self-taught fullstack creative, enthusiastic web and frontend developer</em>.</h4>
+      <Heading
+        firstName="Gianni"
+        lastName="Esposito"
+        position="Web developer">
+        <h4><em>Self-taught enthusiastic and passionate web and frontend developer</em>.</h4>
         <Contacts 
           email="gianniesp@outlook.com"
           tel="+39 328 9452130"
@@ -37,16 +40,16 @@ const Contacts = ({email, tel, linkedin, github}) => (
 )
 
 const Skills = () => {
-  const langs = ["HTML", "CSS", "Javascript"]
-  const tools = ["Wordpress", "React", "Node", "PHP", "MongoDB", "MySQL", "GraphQL", "npm", "Rest API", "Tailwind", "Bootstrap", "GitHub", "Netlify", "Nextjs", "Figma", "Notion", "..."]
+  const langs = ["HTML", "CSS", "🤟🏻 JavaScript"]
+  const tools = ["Wordpress,", "PHP,", "WP Rest API,", "React,", "Nextjs,", "Node,", "MongoDB,", "MySQL,", "GraphQL,", "Tailwind,", "Bootstrap,", "GitHub,", "Netlify,", "Figma,", "Notion,", "..."]
   return (
     <>
-    <h2>SKILLS <span>// Techs and tools I use in every day work</span></h2>
+    <h2>SKILLS <span>// Tech and tools I use in every day work</span></h2>
     <ul className="langs">
-      {langs.map((lang,i) => (<li key={i}><h4>{lang}</h4></li>))}
+      <li><h4>[{langs.join(', ')}]</h4></li>
     </ul>
     <ul className="tools">
-      {tools.map((tool,i) => (<li key={i}>{tool}</li>))}
+      [{tools.map((tool,i) => (<li key={i}>{tool}</li>))}]
     </ul>
     </>
   )
@@ -58,11 +61,11 @@ const Experience = () => {
       position: "Web developer",
       company: "Think2it",
       dates: "Jan 2015 - Present",
-      role: "Detail-oriented Wordpress developer skilled in the creation of custom themes, decoupled CMS and WP based SPAs - through the WP Rest API and/or WPGraphQL. DEM/Email designer and developer. Responsive web designer, UI/UX."
+      role: "Detail-oriented Wordpress developer skilled in the creation of custom themes, decoupled WP-based SPAs - through the WP Rest API. UI/UX designer and developer."
     },
     {
-      position: "Wordpress developer",
-      company: "Freelancer",
+      position: "Web designer",
+      company: "Freelance",
       dates: "Jan 2010 - Dec 2014",
       role: "Web designer, Wordpress themes developer."
     }
@@ -86,7 +89,7 @@ const Education = () => (
       <h2>EDUCATION <span>// Educational history</span></h2>
       <div className="edu">
         <h4>Bachelor's degree in Communication Sciences</h4>
-        <h4>Secondary School Diploma in IT</h4>
+        <h4>Secondary School Diploma in Computer Science</h4>
       </div>
     </>
 )

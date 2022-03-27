@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Resume from './Resume'
+import {G4ESP} from "./Me" 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Resume />
+    <G4ESP />
   </React.StrictMode>,
   document.getElementById('root')
 )

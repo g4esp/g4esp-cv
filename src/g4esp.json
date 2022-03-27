@@ -1,0 +1,35 @@
+{
+    "Head": {
+        "Name": {
+            "firstName": "Gianni",
+            "lastName": "Esposito",
+            "position": "Web developer",
+            "tagline": "Self-taught, enthusiastic and passionate web and frontend developer",
+            "thumb": "https://media-exp1.licdn.com/dms/image/C5103AQF82LFJlO3jyA/profile-displayphoto-shrink_100_100/0/1517059023468?e=2147483647&v=beta&t=MGL2IchxC0Sr0UJNaahelVq933BGxnhpdCKcmKxcdCY"},
+        "Contacts": {
+            "email": "gianniesp@outlook.com",
+            "tel": "+39 328 9452130",
+            "linkedin": "https://www.linkedin.com/in/g4esp/",
+            "github": "https://github.com/g4esp/"
+        }
+    },
+    "Skills": {
+        "langs": ["HTML", "CSS", "🤟🏻 JavaScript"],
+        "tools": ["Wordpress", "PHP", "WP Rest API", "jQuery", "React", "Nextjs", "Nodejs", "GraphQL", "Tailwind", "Bootstrap", "SCSS", "GitHub", "Figma", "Notion", "..."]
+    },
+    "Experience": [
+            {
+                "position": "Web developer",
+                "company": "Think2it",
+                "dates": "Jan 2015 - Present",
+                "role": "Wordpress developer - Frontend developer - UI/UX designer and developer"
+            },
+            {
+                "position": "Web designer",
+                "company": "Freelance",
+                "dates": "Jan 2010 - Dec 2014",
+                "role": "Web designer - Wordpress themes developer"
+              }
+        ],
+    "Education": ["Bachelor's degree in Communication Sciences", "Secondary School Diploma in Computer Science"]
+}

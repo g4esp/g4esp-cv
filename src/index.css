@@ -6,28 +6,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
 }
-p, li {
-  font-size: .9em;
-}
 #root {
-  margin: 2em auto;
+  position: relative;
   max-width: 90vw;
+  padding: 1em;
+  margin: 2em auto;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: -5px 7px 0px;
 }
-
-span {
-  opacity: .5;
+h2, h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em
 }
-a, a:visited {
-  color: inherit;
+h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.9em;
 }
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.contacts li, .langs li {
-  display: inline-block;
-  margin: 0 .5em 0 0;
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em
 }
 .exp h4,
 .edu h4, 
@@ -39,4 +40,96 @@ ul {
 }
 .exp p {
   margin-top: .6em
+}
+p, li {
+  font-size: .9em;
+}
+ul.tools li h4 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+span {
+  opacity: .45;
+  font-weight: 400;
+  font-size: .9em;
+}
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.contacts li,
+.langs li,
+.tools li {
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
+ul.langs li:first-child h4:before,
+ul.tools li:first-child h4:before {
+  content: "[";
+}
+ul.langs li:last-child h4:after,
+ul.tools li:last-child h4:after {
+  content: "]";
+}
+.head {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+.head img[alt="G4ESP"] {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  max-width: 75px;
+  min-width: 75px;
+  padding: 5px;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+.head div:first-child {
+  margin-right: 1em;
+}
+.head p {
+  font-size: 1.7em;
+  margin:0;
+}
+.switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.switcher button {
+  border: 1px solid;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  padding: 2.5px;
+  box-shadow: -2px 2px 0;
+  background-color: transparent;
+}
+.switcher img {
+  max-width: 20px;
+  vertical-align: middle;
+}
+@media screen and (min-width: 600px) {
+  #root {
+    max-width: 550px;
+    padding: 2.5em 3em;
+  }
+  h1 {
+    font-size: 2.25em;
+  }
+  .head {
+    font-size: 1.1em;
+    align-items: center;
+  }
+  .head p {
+    font-size: 1.9em;
+    margin:0;
+  }
 }
