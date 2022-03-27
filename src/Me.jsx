@@ -11,7 +11,7 @@ export const G4ESP = () => {
   const [me, setMe] = useState()
   
   useEffect(() => {
-    fetch('/src/g4esp.json', {
+    fetch('https://github.com/g4esp/g4esp-cv/blob/e89cde4386537da71b41def415197a2fc85093bb/src/g4esp.json', {
       mode: "no-cors"
     })
         .then((data) => data.json())
