@@ -11,7 +11,7 @@ export const G4ESP = () => {
   const [me, setMe] = useState()
   
   useEffect(() => {
-    fetch('src/g4esp.json')
+    fetch('https://github.com/g4esp/g4esp-cv/blob/main/src/g4esp.json')
         .then((data) => data.json())
         .then((profile) => setMe(profile))
         .catch((err) => console.log(err.message))
