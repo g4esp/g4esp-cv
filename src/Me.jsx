@@ -11,11 +11,8 @@ export const G4ESP = () => {
   const [me, setMe] = useState()
   
   useEffect(() => {
-    fetch('src/g4esp.json', {
-      headers: {
-        'Content-type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      }
+    fetch('/src/g4esp.json', {
+      mode: "no-cors"
     })
         .then((data) => data.json())
         .then((profile) => setMe(profile))
