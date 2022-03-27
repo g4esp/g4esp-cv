@@ -7,7 +7,6 @@ body {
   font-size: 16px;
 }
 #root {
-<<<<<<< HEAD
   position: relative;
   max-width: 90vw;
   padding: 1em;
@@ -49,14 +48,12 @@ ul.tools li h4 {
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 0;
-=======
   margin: 2em auto;
   max-width: 600px;
 }
 h4 {
   margin-top: 0.5em;
   margin-bottom: 0.5em
->>>>>>> adb013e5099259bd43bc68265df52bfdfbe2bc81
 }
 span {
   opacity: .45;
@@ -86,7 +83,6 @@ ul.langs li:last-child h4:after,
 ul.tools li:last-child h4:after {
   content: "]";
 }
-<<<<<<< HEAD
 .head {
   display: flex;
   margin-bottom: 1.5em;
@@ -143,11 +139,9 @@ ul.tools li:last-child h4:after {
     margin:0;
   }
 }
-=======
 .exp p {
   margin-top: .6em
 }
 p, li {
   font-size: .9em;
 }
->>>>>>> adb013e5099259bd43bc68265df52bfdfbe2bc81
