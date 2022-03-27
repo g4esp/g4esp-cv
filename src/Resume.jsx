@@ -4,7 +4,8 @@ export default function Resume() {
       <Heading
         firstName="Gianni"
         lastName="Esposito"
-        position="Web developer">
+        position="Web developer"
+      >
         <h4><em>Self-taught fullstack creative, enthusiastic and passionate web and frontend developer</em>.</h4>
         <Contacts 
           email="gianniesp@outlook.com"
@@ -41,7 +42,7 @@ const Contacts = ({email, tel, linkedin, github}) => (
 
 const Skills = () => {
   const langs = ["HTML,", "CSS,", "🤟🏻 JavaScript"]
-  const tools = ["Wordpress,", "PHP,", "WP Rest API,", "React,", "Nextjs,", "Node,", "MongoDB,", "MySQL,", "GraphQL,", "Tailwind,", "Bootstrap,", "GitHub,", "Netlify,", "Figma,", "Notion,", "..."]
+  const tools = ["Wordpress,", "PHP,", "WP Rest API,", "React,", "Nextjs,", "Node,", "MongoDB,", "MySQL,", "GraphQL,", "SCSS,", "Tailwind,", "Bootstrap,", "GitHub,", "Netlify,", "Figma,", "Notion,", "..."]
   return (
     <>
     <h2>SKILLS <span>// Tech and tools I use in every day work</span></h2>
