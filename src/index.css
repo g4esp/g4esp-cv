@@ -161,13 +161,36 @@ p, li {
   text-align: center;
 }
 .footer img {
+  max-width: 25px;
   margin: 0 auto;
   border: 1px solid;
   border-radius: 50%;
   padding: 1px;
 }
+p#mdpr {
+  font-size: .8em;
+  text-align: center;
+  display: none;
+  max-width: 75vw;
+  margin: 5em auto 0;
+}
+span.running-app {
+  display: none;
+}
 @media print {
+  #root {
+    max-width: 65vw;
+    margin: 2em auto;
+  } 
   .switcher {
     display: none;
+  }
+  p#mdpr {
+    display: block;
+  }
+  span.running-app {
+    font-size: 1em;
+    opacity: 1;
+    display: inline-block;
   }
 } 
