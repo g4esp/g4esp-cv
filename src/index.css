@@ -145,3 +145,18 @@ ul.tools li:last-child h4:after {
 p, li {
   font-size: .9em;
 }
+.footer {
+  margin-top: 2.5em;
+}
+.footer,
+.footer p {
+  text-align: center;
+}
+.footer img {
+  margin: 0 auto;
+}
+@media print {
+  .switcher {
+    display: none;
+  }
+} 
