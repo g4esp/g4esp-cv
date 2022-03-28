@@ -13,8 +13,8 @@ export const G4ESP = () => {
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/g4esp/g4esp-cv/main/src/g4esp.json', {
     })
-        .then((data) => data.json())
-        .then((profile) => setMe(profile))
+        .then((raw) => raw.json())
+        .then((data) => setMe(data))
         .catch((err) => console.log(err.message))
   }, [])
 

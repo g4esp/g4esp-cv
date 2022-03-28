@@ -7,13 +7,9 @@ export default function Heading ({heading: {firstName, lastName, position, tagli
   const changeTheme = () => {
     setDark(!dark)
     if (!dark) {
-      document.body.style.backgroundColor = 'black'
-      document.body.style.color = 'white'
-      document.querySelector('button').style.color = 'white'
+      document.body.className = "dark"
     } else {
-      document.body.style.backgroundColor = 'white'
-      document.body.style.color = 'black'
-      document.querySelector('button').style.color = 'black'
+      document.body.className = ""
     }
   }
   return (
