@@ -14,7 +14,7 @@ body.dark a,
 body.dark button {
   color: #FFF;
 }
-#root {
+#cv {
   position: relative;
   max-width: 90vw;
   padding: 1em;
@@ -131,7 +131,7 @@ ul.tools li:last-child h4:after {
   vertical-align: middle;
 }
 @media screen and (min-width: 600px) {
-  #root {
+  #cv {
     max-width: 550px;
     padding: 2.5em 3em;
   }
@@ -178,7 +178,7 @@ span.running-app {
   display: none;
 }
 @media print {
-  #root {
+  #cv {
     max-width: 65vw;
     margin: 2em auto;
   } 
