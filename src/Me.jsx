@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import favicon from "./favicon.svg"
 
 import Heading from "./components/Heading"
 import Contacts from "./components/Contacts"
@@ -33,7 +34,7 @@ export const G4ESP = () => {
             <Education education={me.Education} />
           </div>
           <div className="footer">
-            <a href="/" title="G4ESP©22"><img src="/src/favicon.svg" alt="LOGO G4ESP" /></a>
+            <a href="/" title="G4ESP©22"><img src={favicon} alt="LOGO G4ESP" /></a>
             <p>
               <span className="running-app"><a href="https://g4esp-cv.netlify.app/" target="_blank" title="Running App">Running App</a>&nbsp;-&nbsp;</span><a href="https://github.com/g4esp/g4esp-cv" target="_blank" title="Source Code">Source Code</a> - G4ESP © 2022 - All Rights Reserved</p>
           </div>
